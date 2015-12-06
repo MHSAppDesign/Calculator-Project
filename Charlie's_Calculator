@@ -18,7 +18,7 @@ class TipCalculator{
         print("18%: \(calcTipWithTipPct(0.18))")
         print("20%: \(calcTipWithTipPct(0.20))")
     }
-    
-    let tipCalc = TipCalculator(total: 33.25, taxPct: 0.06)
-    tipCalc.printPossibleTips()
 }
+
+let tipCalc = TipCalculator(total: 33.25, taxPct: 0.06)
+tipCalc.printPossibleTips()
