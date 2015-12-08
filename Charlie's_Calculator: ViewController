@@ -2,8 +2,8 @@
 //  ViewController.swift
 //  Tip Calculator
 //
-//  Created by Charlie Bushman and Austin Rose on 12/6/15.
-//  Copyright © 2015 sqrt(-1). All rights to fuck bitches have been reserved.
+//  Created by Charlie Bushman on 12/6/15.
+//  Copyright © 2015 sqrt(-1). All rights reserved.
 //
 
 import UIKit
@@ -45,7 +45,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func taxPercentageChanged(sender : AnyObject){
-        tipCalc.taxPct = Double(taxPctSlider.value) * 100
+        tipCalc.taxPct = Double(taxPctSlider.value) / 100
         refreshUI()
     }
     
@@ -57,8 +57,8 @@ class ViewController: UIViewController {
     
     func refreshUI(){
         totalTextField.text = String(format: "%0.2f", tipCalc.total)
-        taxPctSlider.value = Float(tipCalc.taxPct) * 100.0
-        taxPctLabel.text = "Tax Percentage (\(Int(taxPctSlider.value))%)"
+        taxPctSlider.value = Float(tipCalc.taxPct) * 1000.0
+        taxPctLabel.text = "Tax Percentage (\(Int(taxPctSlider.value*10))%)"
         resultsTextView.text = ""
     }
 }
