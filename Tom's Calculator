@@ -1,1 +1,35 @@
+//Tom's cool meter
+import Foundation
 
+//First ask for arbitrary information
+var coolLevel = arc4random(10)
+var output = "default"
+
+if coolLevel > 9
+{
+
+}
+else if coolLevel > 7
+{
+
+}
+else if coollevel > 5
+{
+
+}
+else if coolLevel > 4
+{
+
+}
+else if coolLevel > 2
+{
+
+}
+else if coolLevel > 0
+{
+
+}
+else
+{
+
+}
